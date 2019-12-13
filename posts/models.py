@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from django.db import models
 from django.utils import timezone
 
+
 # Create your models here.
 class Post(models.Model):
     """
@@ -19,3 +20,6 @@ class Post(models.Model):
 
     def __unicode__(self):
         return self.title
+
+    def __str__(self):
+        return self.content   
